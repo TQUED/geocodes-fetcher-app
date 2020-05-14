@@ -60,15 +60,15 @@ deactivate
 ### Built with:
 
 ```
-- Python - Server
-- Flask - Framework
-- Git - Version control tool
+* Python - Server
+* Flask - Framework
+* Git - Version control tool
 ```
 
 #### Deployment Tools:
 ```
-- GitHub Actions
-- Heroku
+* GitHub Actions
+* Heroku
 ```
 
 ### Contributor:
