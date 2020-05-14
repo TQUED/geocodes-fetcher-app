@@ -1,17 +1,16 @@
-# App geocodes-fetcher-app
+# Welcome to Geocodes-Fetcher-App (now on Heroku!)
 
 ###### Python based geo cordinates fetching application
-
-[![Build Status]()]()
 
 ## Project Goal
 
 Using google Geocode API this application exposes endpoint to fetch coordinates(Latitude and Longitude) of a given address line. App reads a given excel file line by line and provides a result excel file with coordinates of each address line.
 
-# Installation Pre-requisites:
-To install following dependencies: [Note you have Python 3.5(or above version) installed with pip and virtualenv]
+
 
 ## Getting Started
+
+**Note:** you have Python 3.5(or above version) installed with pip and virtualenv
 
 ### Virtual environment setup
 
