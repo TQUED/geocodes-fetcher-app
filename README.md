@@ -66,9 +66,26 @@ pip install -r requirements.txt
 
 ![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/get-url.png)
 
-2. Upload endpoint
+2. Upload endpoints
+
+2.1 Upload Endpoint Request Snapshot
 
 ![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/upload_request.png)
+
+
+2.2 Upload Endpoint Response Snapshot
+
+![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/upload_request-response.png)
+
+
+2.3 Upload Endpoint Input Excel Format
+
+![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/input-excel-format.png)
+
+
+2.4 Upload Endpoint Output Excel Format
+
+![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/output-excel-format.png)
 
 
 ### Deactivate the virtual environment
