@@ -11,8 +11,7 @@ Using google Geocode API this application exposes endpoint to fetch coordinates(
 ## Getting Started
 
 
-**Note:** You have Python 3.5 or above installed with pip and virtualenv
-
+**Note:** You have Python 3.5 or above installed with pip and virtualenv in a UNIX like box
 
 ### Virtual environment setup
 
@@ -23,7 +22,7 @@ virtualenv venv
 ### Activate venv
 
 ```
-source venv/bin/activate [for Unix like systems]
+source venv/bin/activate 
 ```
 
 ### Clone the repo
