@@ -2,7 +2,7 @@
 
 ###### Python based geo cordinates fetching application
 
-[![App URL](https://geofinder.herokuapp.com)](https://geofinder.herokuapp.com/health)
+[Visit](https://geofinder.herokuapp.com)
 
 ## Project Goal
 
