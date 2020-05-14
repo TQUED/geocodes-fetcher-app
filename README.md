@@ -49,7 +49,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### Open a browser and go to 127.0.0.1:5000
+* Open a browser and go to 127.0.0.1:5000
 
 ### Deactivate the venv
 
@@ -57,7 +57,7 @@ python main.py
 deactivate
 ```
 
-### Built with:
+### Built With:
 
 
 * Python - Server
