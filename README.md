@@ -59,17 +59,17 @@ deactivate
 
 ### Built with:
 
-```
+
 * Python - Server
 * Flask - Framework
 * Git - Version control tool
-```
+
 
 #### Deployment Tools:
-```
+
 * GitHub Actions
 * Heroku
-```
+
 
 ### Contributor:
 
