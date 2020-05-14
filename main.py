@@ -22,7 +22,7 @@ def index():
     """
         health check endpoint
     """
-    os.system("rm -f data/*")  # removing junks from working directory
+    os.system("rm -f my_file_*")  # removing junks from working directory
     return jsonify({"status": "UP"})
 
 
@@ -58,12 +58,12 @@ def upload_file():
 
         LOG.info("calculated dataframe is :- \n %s", df_main)
         output_filename = (
-            f"data/my_file_{datetime.datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.xlsx"
+            f"my_file_{datetime.datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.xlsx"
         )
         df_main.to_excel(output_filename)
         return send_file(
             output_filename,
-            attachment_filename=output_filename.split("/")[1],
+            attachment_filename=output_filename,
             as_attachment=True,
         )
 
