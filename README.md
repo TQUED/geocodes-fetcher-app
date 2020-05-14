@@ -48,12 +48,16 @@ pip install -r requirements.txt
 ### Run this command in local
 
 ```
-python main.py
+(venv)$python main.py 
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-* Open a browser and go to 127.0.0.1:5000
-
-### Deactivate the venv
+### Deactivate the virtual env
 
 ```
 deactivate
