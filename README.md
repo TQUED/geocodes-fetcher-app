@@ -10,7 +10,9 @@ Using google Geocode API this application exposes endpoint to fetch coordinates(
 
 ## Getting Started
 
-**Note:** you have Python 3.5(or above version) installed with pip and virtualenv
+
+**Note:** You have Python 3.5 or above installed with pip and virtualenv
+
 
 ### Virtual environment setup
 
