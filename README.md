@@ -62,11 +62,11 @@ pip install -r requirements.txt
 * /       - home page 
 * /upload - upload excel file and fecth coordinates as excel
 
-### index endpoint
+1. Index endpoint
 
 ![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/get-url.png)
 
-### upload endpoint
+2. Upload endpoint
 
 ![Application Landing Banner](https://github.com/TQUED/geocodes-fetcher-app/blob/master/imgs/upload_request.png)
 
