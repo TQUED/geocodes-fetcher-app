@@ -1,12 +1,14 @@
 """
     Flask APP main module
 """
-import os
-import logging
 import datetime
-import googlemaps
+import logging
+import os
+
 import pandas as pd
 from flask import Flask, jsonify, request, send_file
+
+import googlemaps
 
 APP = Flask(__name__)
 APP.config.from_object("config.Config")
@@ -20,7 +22,7 @@ def index():
     """
         health check endpoint
     """
-    os.system("rm -f data/*") # removing junks from working directory 
+    os.system("rm -f data/*")  # removing junks from working directory
     return jsonify({"status": "UP"})
 
 
@@ -43,23 +45,27 @@ def upload_file():
             return jsonify({"status": f"{err_obj.__repr__()}"})
 
         for i in range(0, len(df_main), 1):
-            # geocode_result = GMAPS_KEY.geocode(df_main.iat[i, 0])
+            geocode_result = GMAPS_KEY.geocode(df_main.iat[i, 0])
             try:
-                # lat = geocode_result[0]["geometry"]["location"]["lat"]
-                # lon = geocode_result[0]["geometry"]["location"]["lng"]
-                df_main.iat[i, df_main.columns.get_loc("Latitude")] = 11.22
-                df_main.iat[i, df_main.columns.get_loc("Longitude")] = 22.33
+                lat = geocode_result[0]["geometry"]["location"]["lat"]
+                lon = geocode_result[0]["geometry"]["location"]["lng"]
+                df_main.iat[i, df_main.columns.get_loc("Latitude")] = lat
+                df_main.iat[i, df_main.columns.get_loc("Longitude")] = lon
             except Exception:
                 # set latitude and longitude as None on exception
-                df_main.iat[i, df_main.columns.get_loc("Latitude")] = 33.44
-                df_main.iat[i, df_main.columns.get_loc("Longitude")] = 44.55
+                df_main.iat[i, df_main.columns.get_loc("Latitude")] = None
+                df_main.iat[i, df_main.columns.get_loc("Longitude")] = None
 
         LOG.info("calculated dataframe is :- \n %s", df_main)
-        output_filename = f"data/my_file_{datetime.datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.xlsx"
+        output_filename = (
+            f"data/my_file_{datetime.datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.xlsx"
+        )
         df_main.to_excel(output_filename)
-        return send_file(output_filename,
+        return send_file(
+            output_filename,
             attachment_filename=output_filename.split("/")[1],
-            as_attachment=True)
+            as_attachment=True,
+        )
 
     # returns error when "file" param is not found
     return jsonify({"status": "URL parameter missing!!"})
