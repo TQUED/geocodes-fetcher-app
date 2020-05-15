@@ -51,6 +51,17 @@ pip install -r requirements.txt
 export API_KEY="<YOUR-GOOGLE-API-KEY-HERE>"
 ```
 
+or
+
+```
+* vi ~/.bash_profile 
+* export API_KEY="<YOUR-GOOGLE-API-KEY-HERE>"
+* save ~/.bash_profile
+* bash -l [To make available the environment variables]
+* re-activate your virtualenv and proceed to the next step
+
+```
+
 ### Run this command in local
 
 ```
