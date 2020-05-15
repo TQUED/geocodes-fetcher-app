@@ -45,6 +45,12 @@ cd geocodes-fetcher-app
 pip install -r requirements.txt
 ```
 
+### ADD ENV VARIABLE API_KEY with your google cloud credentials
+
+```
+export API_KEY="<YOUR-GOOGLE-API-KEY-HERE>"
+```
+
 ### Run this command in local
 
 ```
