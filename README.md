@@ -1,8 +1,7 @@
-# Welcome to Geocodes-Fetcher-App (now on Heroku!)
+# Welcome to Geocodes-Fetcher-App
 
 ###### Python based geo cordinates fetching application
 
-[Visit](https://geofinder.herokuapp.com)
 
 ## Project Goal
 
